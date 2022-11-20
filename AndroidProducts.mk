@@ -6,6 +6,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/RMX3491_cannong.mk
+    $(LOCAL_DIR)/twrp_RMX3491.mk
 
-COMMON_LUNCH_CHOICES := RMX3491_cannong-eng
+COMMON_LUNCH_CHOICES := twrp_RMX3491-eng
