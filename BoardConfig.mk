@@ -58,8 +58,8 @@ TARGET_KERNEL_SOURCE := kernel/realme/RMX3491
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel Prebuilt
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 # Args
