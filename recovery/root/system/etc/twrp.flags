@@ -28,42 +28,42 @@
 #device         mount point      fstype        [device2] [length=]
 
 # External Partitions
-/dev/block/mmcblk1p1                       /external_sd    vfat    nosuid,nodev                                                    defaults
-/dev/block/sdg1                            /usb_otg        vfat    nosuid,nodev                                                    defaults
+/external_sd    vfat       /dev/block/mmcblk1p1                           nosuid,nodev                                                    defaults
+/usb_otg        vfat       /dev/block/sdg1                                nosuid,nodev                                                    defaults
 
 # Flashable Partitions
-/dev/block/bootdevice/by-name/boot         /boot           emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/recovery     /recovery       emmc    defaults                                                        defaults
+/boot           emmc     /dev/block/bootdevice/by-name/boot             defaults                                                        defaults
+/recovery       emmc     /dev/block/bootdevice/by-name/recovery         defaults                                                        defaults
+/persist        ext4    /dev/block/bootdevice/by-name/persist          defaults                                                        defaults
 
 # Other OPlus-Related Partitions
-/dev/block/bootdevice/by-name/aboot        /aboot          emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/abootbak     /abootbak       emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/modem        /modem          emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/sbl1         /sbl1           emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/sbl1bak      /sbl1bak        emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/rpm          /rpm            emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/rpmbak       /rpmbak         emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/tz           /tz             emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/tzbak        /tzbak          emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/modem_st1    /modemst1       emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/modem_st2    /modemst2       emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/oppostanvbk  /static_nv_bk   emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/oppodycnvbk  /oppodycnvbk    emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/LOGO         /logo           emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/reserve4     /reserve4       emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/dsp          /dsp            emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/DDR          /DDR            emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/devcfg       /devcfg         emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/mdtp         /mdtp           emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/cmnlib       /cmnlib         emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/cmnlibbak    /cmnlibbak      emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/keymaster    /keymaster      emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/keymasterbak /keymasterbak   emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/apdp         /apdp           emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/devinfo      /devinfo        emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/persist      /persist        ext4    defaults                                                        defaults
-/dev/block/bootdevice/by-name/opporeserve2 /opporeserve    ext4    rw,seclabel,nosuid,nodev,noatime,data=ordered                   defaults
-/dev/block/bootdevice/by-name/abl          /abl            emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/ablbak       /ablbak         emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/xbl          /xbl            emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/xblbak       /xblbak         emmc    defaults                                                        defaults
+/aboot          emmc    /dev/block/bootdevice/by-name/aboot            defaults                                                        defaults
+/abootbak       emmc    /dev/block/bootdevice/by-name/abootbak         defaults                                                        defaults
+/modem          emmc    /dev/block/bootdevice/by-name/modem            defaults                                                        defaults
+/sbl1           emmc    /dev/block/bootdevice/by-name/sbl1             defaults                                                        defaults
+/sbl1bak        emmc    /dev/block/bootdevice/by-name/sbl1bak          defaults                                                        defaults
+/rpm            emmc    /dev/block/bootdevice/by-name/rpm              defaults                                                        defaults
+/rpmbak         emmc    /dev/block/bootdevice/by-name/rpmbak           defaults                                                        defaults
+/tz             emmc    /dev/block/bootdevice/by-name/tz               defaults                                                        defaults
+/tzbak          emmc    /dev/block/bootdevice/by-name/tzbak            defaults                                                        defaults
+/modemst1       emmc    /dev/block/bootdevice/by-name/modem_st1        defaults                                                        defaults
+/modemst2       emmc    /dev/block/bootdevice/by-name/modem_st2        defaults                                                        defaults
+/static_nv_bk   emmc    /dev/block/bootdevice/by-name/oppostanvbk      defaults                                                        defaults
+/oppodycnvbk    emmc    /dev/block/bootdevice/by-name/oppodycnvbk      defaults                                                        defaults
+/logo           emmc    /dev/block/bootdevice/by-name/LOGO             defaults                                                        defaults
+/reserve4       emmc    /dev/block/bootdevice/by-name/reserve4         defaults                                                        defaults
+/dsp            emmc    /dev/block/bootdevice/by-name/dsp              defaults                                                        defaults
+/DDR            emmc    /dev/block/bootdevice/by-name/DDR              defaults                                                        defaults
+/devcfg         emmc    /dev/block/bootdevice/by-name/devcfg           defaults                                                        defaults
+/mdtp           emmc    /dev/block/bootdevice/by-name/mdtp             defaults                                                        defaults
+/cmnlib         emmc    /dev/block/bootdevice/by-name/cmnlib           defaults                                                        defaults
+/cmnlibbak      emmc    /dev/block/bootdevice/by-name/cmnlibbak        defaults                                                        defaults
+/keymaster      emmc    /dev/block/bootdevice/by-name/keymaster        defaults                                                        defaults
+/keymasterbak   emmc    /dev/block/bootdevice/by-name/keymasterbak     defaults                                                        defaults
+/apdp           emmc    /dev/block/bootdevice/by-name/apdp             defaults                                                        defaults
+/devinfo        emmc    /dev/block/bootdevice/by-name/devinfo          defaults                                                        defaults
+/opporeserve    ext4    /dev/block/bootdevice/by-name/opporeserve2     rw,seclabel,nosuid,nodev,noatime,data=ordered                   defaults
+/abl            emmc    /dev/block/bootdevice/by-name/abl              defaults                                                        defaults
+/ablbak         emmc    /dev/block/bootdevice/by-name/ablbak           defaults                                                        defaults
+/xbl            emmc    /dev/block/bootdevice/by-name/xbl              defaults                                                        defaults
+/xblbak         emmc    /dev/block/bootdevice/by-name/xblbak           defaults                                                        defaults
