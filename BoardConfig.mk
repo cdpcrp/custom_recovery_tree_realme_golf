@@ -111,7 +111,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libnetutils \
     libxml2 \
-    libdrmfs.so \
+    libdrmfs \
     vendor.display.config@1.0
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
@@ -152,7 +152,6 @@ TW_INCLUDE_FASTBOOTD := true
 TW_USE_FSCRYPT_POLICY := 2
 BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USES_MKE2FS := true
-TARGET_SUPPORTS_64_BIT_APPS := false
 LC_ALL="C"
 TW_DEVICE_VERSION := cd-Spidey
 
