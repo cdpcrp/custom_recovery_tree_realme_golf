@@ -1,2 +1,4 @@
 # Work in Progress (RMX3491)
-TODO: Everything.
+TODO:
+ - Touch does not work.
+ - Fix `not booting into system` issue.
