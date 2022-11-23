@@ -44,3 +44,9 @@ on post-fs
 
 on boot
     start health-hal-2-1
+
+service cryptoeng-1-0 /system/bin/vendor.oplus.hardware.cryptoeng@1.0-service
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
