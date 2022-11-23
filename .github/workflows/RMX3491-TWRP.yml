@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491'
+        default: 'https://github.com/cd-Spidey/custom_recovery_tree_realme_RMX3491'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
