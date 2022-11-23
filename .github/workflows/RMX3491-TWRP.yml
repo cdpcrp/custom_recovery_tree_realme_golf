@@ -142,13 +142,13 @@ jobs:
       with:
         artifacts: |
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/twrp*.img
-        name: Unofficial TWRP for Realme 8 4G (nashc) - Build ${{ steps.props.outputs.date }} / ${{ github.run_id }}
+        name: Unofficial TWRP for Realme 9i (RMX3491) - Build ${{ steps.props.outputs.date }} / ${{ github.run_id }}
         draft: false
         prerelease: true
         token: ${{ secrets.GITHUB_TOKEN }}
         tag: ${{ steps.props.outputs.date }}-${{ github.run_id }}
         body: |
-          ## TWRP v3.7.0_12.1-nashc-${{ steps.props.outputs.date }}
+          ## TWRP v3.7.0_12.1-RMX3491-${{ steps.props.outputs.date }}
           - To be edited.
           - To be edited.
           - To be edited. 
