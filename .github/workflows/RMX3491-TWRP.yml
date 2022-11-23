@@ -1,4 +1,4 @@
-name: ROG Phone 6 - TWRP
+name: Realme 8 4G - TWRP
 
 on:
   workflow_dispatch:
