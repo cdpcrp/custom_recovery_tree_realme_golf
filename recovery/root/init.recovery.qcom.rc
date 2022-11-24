@@ -51,3 +51,15 @@ service cryptoeng-1-0 /system/bin/vendor.oplus.hardware.cryptoeng@1.0-service
     group root
     disabled
     seclabel u:r:recovery:s0
+
+service vendor.touch-1-0  /system/bin/vendor.oplus.hardware.touch@1.0-service
+    class hal
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
+service vendor.qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
+    class hal
+    user root
+    group root input
+    seclabel u:r:recovery:s0
