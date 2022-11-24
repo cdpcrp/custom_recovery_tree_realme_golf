@@ -34,7 +34,10 @@
 # Flashable Partitions
 /boot           emmc     /dev/block/bootdevice/by-name/boot
 /recovery       emmc     /dev/block/bootdevice/by-name/recovery
-/persist        ext4    /dev/block/bootdevice/by-name/persist
+/persist        ext4     /dev/block/bootdevice/by-name/persist
+
+# Other Partitions
+/metadata	ext4	 /dev/block/by-name/metadata            flags=display=Metadata
 
 # Other OPlus-Related Partitions
 /aboot          emmc    /dev/block/bootdevice/by-name/aboot
