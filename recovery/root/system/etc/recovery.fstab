@@ -28,23 +28,23 @@
 #device         mount point      fstype        [device2] [length=]
 
 # Logical Partition
-system                                     /system         ext4    ro,barrier=1                                      wait,logical,first_stage_mount
-vendor                                     /vendor         ext4    ro,barrier=1                                      wait,logical,first_stage_mount
-product                                    /product        ext4    ro,barrier=1                                      wait,logical,first_stage_mount
+system                                     /system         erofs    ro                                      wait,logical
+vendor                                     /vendor         erofs    ro                                      wait,logical
+product                                    /product        erofs    ro                                      wait,logical
 
-system                                     /system         erofs   ro                                                wait,logical,first_stage_mount
-vendor                                     /vendor         erofs   ro                                                wait,logical,first_stage_mount
-product                                    /product        erofs   ro                                                wait,logical,first_stage_mount
+system                                     /system         ext4     ro,barrier=1                            wait,logical,first_stage_mount
+vendor                                     /vendor         ext4     ro,barrier=1                            wait,logical,first_stage_mount
+product                                    /product        ext4     ro,barrier=1                            wait,logical,first_stage_mount
 
 # OPlus-related Partitions
-my_product                                 /my_product     erofs   ro                                                wait,logical,first_stage_mount
-my_engineering                             /my_engineering erofs   ro                                                wait,logical,first_stage_mount
+my_product                                 /my_product     erofs   ro                                                wait,logical
+my_engineering                             /my_engineering erofs   ro                                                wait,logical
 
 my_product                                 /my_product     ext4    ro,barrier=1                                      wait,logical,first_stage_mount
 my_engineering                             /my_engineering ext4    ro,barrier=1                                      wait,logical,first_stage_mount
 
 # Other Partitions
-/dev/block/by-name/cache                   /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered       wait,check,first_stage_mount
-/dev/block/by-name/metadata                /metadata       ext4    noatime,nosuid,nodev,discard                         wait,formattable,first_stage_mount
-/dev/block/bootdevice/by-name/userdata     /data           f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt   latemount,wait,resize,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs                                                       defaults
+/dev/block/by-name/cache                   /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                                                    wait,check
+/dev/block/by-name/metadata                /metadata       ext4    noatime,nosuid,nodev,discard                                                                   wait,check,formattable,wrappedkey,first_stage_mount
+/dev/block/bootdevice/by-name/userdata     /data           f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt   wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts:wrappedkey_v0,quota
 /dev/block/bootdevice/by-name/misc         /misc           emmc    defaults                                                        defaults
