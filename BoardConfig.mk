@@ -103,7 +103,7 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/vendor.prop
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
-TW_LOAD_VENDOR_MODULES := "gt9xx_fw.bin"
+TW_LOAD_VENDOR_MODULES := "rdbg.ko audio_adsp_loader.ko audio_aw882xx.ko audio_aw87xxx.ko"
 
 # Recovery Modules
 TARGET_RECOVERY_DEVICE_MODULES += \
