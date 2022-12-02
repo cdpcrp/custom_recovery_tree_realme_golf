@@ -23,7 +23,3 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Copy modules for depmod
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*.ko,device/realme/RMX3491/prebuilt/modules/,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/)
