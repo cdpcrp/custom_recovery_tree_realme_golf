@@ -278,28 +278,28 @@ firmware_directories /mnt/vendor/persist/ /vendor/firmware_mnt/image/
 /sys/devices/virtual/optical_sensors/proximity      ps_poll_delay  0660    input    system
 /sys/devices/virtual/optical_sensors/lightsensor    ls_auto        0660    input    system
 /sys/devices/virtual/optical_sensors/lightsensor    ls_poll_delay  0660    input    system
-/sys/devices/virtual/input/input*                   poll           0660    input    system
-/sys/devices/virtual/input/input*                   pollrate_ms    0660    input    system
-/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input*    secure_touch         0440   system  drmrpc
-/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input*    secure_touch_enable  0660   system  drmrpc
-/sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input*    secure_touch         0440   system  drmrpc
-/sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input*    secure_touch_enable  0660   system  drmrpc
-/sys/devices/soc/78b7000.i2c/i2c-3/3-004b/input/input*    secure_touch         0440   system  drmrpc
-/sys/devices/soc/78b7000.i2c/i2c-3/3-004b/input/input*    secure_touch_enable  0660   system  drmrpc
-/sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input*    secure_touch         0440   system  drmrpc
-/sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input*    secure_touch_enable  0660   system  drmrpc
-/sys/devices/platform/soc/a98000.i2c/i2c-2/2-0020/input/input*  secure_touch          0440 system drmrpc
-/sys/devices/platform/soc/a98000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660 system drmrpc
-/sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch          0440 system drmrpc
-/sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660 system drmrpc
+/sys/devices/virtual/input/input*                   poll           0660    input    root
+/sys/devices/virtual/input/input*                   pollrate_ms    0660    input    root
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input*    secure_touch         0660   root    drmrpc
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input*    secure_touch_enable  0660   root    drmrpc
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input*    secure_touch         0660   root    drmrpc
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input*    secure_touch_enable  0660   root    drmrpc
+/sys/devices/soc/78b7000.i2c/i2c-3/3-004b/input/input*    secure_touch         0660   root    drmrpc
+/sys/devices/soc/78b7000.i2c/i2c-3/3-004b/input/input*    secure_touch_enable  0660   root    drmrpc
+/sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input*    secure_touch         0660   root    drmrpc
+/sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input*    secure_touch_enable  0660   root    drmrpc
+/sys/devices/platform/soc/a98000.i2c/i2c-2/2-0020/input/input*  secure_touch          0660   root   drmrpc
+/sys/devices/platform/soc/a98000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660   root   drmrpc
+/sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch          0660   root   drmrpc
+/sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660   root   drmrpc
 
 # GNSS Device premissions
 /dev/gnss_sirf             0660   gps     gps
 
 # laser sensor access
-/sys/devices/virtual/input/input*                   enable_ps_sensor 0660  system   input
-/sys/devices/virtual/input/input*                   set_delay_ms     0660  system   input
-/sys/devices/virtual/input/input*                   do_flush         0660  system   input
+/sys/devices/virtual/input/input*                   enable_ps_sensor 0660  root   input
+/sys/devices/virtual/input/input*                   set_delay_ms     0660  root   input
+/sys/devices/virtual/input/input*                   do_flush         0660  root   input
 
 # vm_bms
 /dev/vm_bms               0660   system     system
