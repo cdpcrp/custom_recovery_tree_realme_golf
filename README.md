@@ -1,5 +1,5 @@
 # Work in Progress (RMX3491)
-What's working:
+What's working?
 - Touchpanel
 - Decryption
 - Vibration/Haptic 
@@ -8,7 +8,7 @@ What's working:
 - Terminal/Console
 - MTP Enable/Disable
 
-Needs more tests:
+Need more test?
 - Backup/Restore
 - Flashing a Custom Rom (if exist)
 
