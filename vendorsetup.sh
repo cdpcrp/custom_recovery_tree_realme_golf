@@ -65,8 +65,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Always Enable NavBar
 	export OF_ALLOW_DISABLE_NAVBAR=0
 
-	# Device Codename (Redmi Note 9T)
-	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493"
+	# Device Codename (other variant)
+	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493,ossi,bengal,qti"
 
 	# Partitions Handling
 	export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery"
