@@ -152,7 +152,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USES_MKE2FS := true
 TARGET_SUPPORTS_64_BIT_APPS := false
 LC_ALL="C"
-TW_DEVICE_VERSION := cd-Spidey-f-alpha
+TW_DEVICE_VERSION := Crypton
 
 # Debugging Configs
 TWRP_INCLUDE_LOGCAT := true
