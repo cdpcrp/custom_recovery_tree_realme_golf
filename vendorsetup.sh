@@ -67,7 +67,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# Device Codename (other variant)
 	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493,ossi,bengal,qti"
-        export OF_TARGET_DEVICES="RMX3491T2,RMX3493,ossi,bengal,qti"
+        #export OF_TARGET_DEVICES="RMX3491T2,RMX3493,ossi,bengal,qti"
 
 	# Partitions Handling
 	export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery"
