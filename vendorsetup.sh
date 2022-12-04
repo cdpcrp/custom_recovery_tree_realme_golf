@@ -66,7 +66,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ALLOW_DISABLE_NAVBAR=0
 
 	# Device Codename (Redmi Note 9T)
-	export TARGET_DEVICE_ALT="RMX3491.RMX3491T2.RMX3493"
+	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493"
 
 	# Partitions Handling
 	export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery"
@@ -95,12 +95,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_PATCH_AVB20=1
 	# Prevent Splash Screen Changing
 	export OF_NO_SPLASH_CHANGE=1
-	#  Disable Built-in Magisk
-	export FOX_DELETE_MAGISK_ADDON=0
-	# Magisk Zip (25.2)
-        export FOX_USE_SPECIFIC_MAGISK_ZIP="$PWD/device/xiaomi/cannon/recovery/root/orangefiles/Magisk.zip"
-	# Magisk Version
-	export MAGISK_VER=25.2
 	# Magisk Boot Patch
 	export OF_USE_MAGISKBOOT=1
 	export OF_PATCH_VBMETA_FLAG=2
