@@ -28,12 +28,12 @@
 #device         mount point      fstype        [device2] [length=]
 
 # Logical Partition
-system                                     /system         erofs    ro                                      wait,logical,avb=vbmeta_system,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system                                     /system         erofs    ro                                      wait,logical,avb=vbmeta_system
 system_ext                                 /system_ext     erofs    ro                                      wait,logical,avb=vbmeta_system
 vendor                                     /vendor         erofs    ro                                      wait,logical,avb=vbmeta_vendor
 product                                    /product        erofs    ro                                      wait,logical,avb=vbmeta_system
 
-system                                     /system         ext4     ro,barrier=1                            wait,logical,avb=vbmeta_system,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system                                     /system         ext4     ro,barrier=1                            wait,logical,avb=vbmeta_system,first_stage_mount
 system_ext                                 /system_ext     ext4     ro,barrier=1                            wait,logical,avb=vbmeta_system,first_stage_mount
 vendor                                     /vendor         ext4     ro,barrier=1                            wait,logical,avb=vbmeta_vendor,first_stage_mount
 product                                    /product        ext4     ro,barrier=1                            wait,logical,avb=vbmeta_system,first_stage_mount
