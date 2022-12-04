@@ -49,8 +49,6 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00008000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x4a90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += firmware_class.path=/odm/firmware/tp/136897/image
 
 # Kernel Source
 TARGET_KERNEL_CONFIG := RMX3491_defconfig
@@ -134,8 +132,6 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-#TW_Y_OFFSET := 100
-#TW_H_OFFSET := -100
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_CRYPTO := true
