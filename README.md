@@ -21,6 +21,7 @@ What's working?
 Need more test?
 - Backup/Restore
 - Flashing a Custom Rom (if exist)
+- Flashing a Stock Rom (if Recovery Rom exist)
 
 Notes:
  - Download from here: [20221204-3610990927](https://github.com/cd-Spidey/custom_recovery_tree_realme_RMX3491/releases/tag/20221204-3610990927)
