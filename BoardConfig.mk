@@ -156,7 +156,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USES_MKE2FS := true
 TARGET_SUPPORTS_64_BIT_APPS := false
 LC_ALL="C"
-TW_DEVICE_VERSION := cd-Spidey-patch-1
+TW_DEVICE_VERSION := cd-Spidey-f-alpha
 
 # Debugging Configs
 TWRP_INCLUDE_LOGCAT := true
