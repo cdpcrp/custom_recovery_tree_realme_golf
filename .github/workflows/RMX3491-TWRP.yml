@@ -131,7 +131,7 @@ jobs:
       run: |
         echo "date=$(date +%Y%m%d)" >> $GITHUB_OUTPUT
 
-    - name: Renaming into SHRP
+    - name: Renaming into TWRP
       run: |
         cd out/target/product/${{ github.event.inputs.DEVICE_NAME }}
         mv ${{ github.event.inputs.BUILD_TARGET }}.img shrp-3.7.0_12.1-${{ github.event.inputs.DEVICE_NAME }}-${{ steps.props.outputs.date }}.img
@@ -141,14 +141,14 @@ jobs:
       uses: ncipollo/release-action@v1.11.1
       with:
         artifacts: |
-          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/shrp*.img
-        name: Unofficial SHRP for Realme 9i (RMX3491) - Build ${{ steps.props.outputs.date }} / ${{ github.run_id }}
+          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/twrp*.img
+        name: Unofficial TWRP for Realme 9i (RMX3491) - Build ${{ steps.props.outputs.date }} / ${{ github.run_id }}
         draft: false
         prerelease: true
         token: ${{ secrets.GITHUB_TOKEN }}
         tag: ${{ steps.props.outputs.date }}-${{ github.run_id }}
         body: |
-          ## SHRP v3.7.0_12.1-RMX3491-${{ steps.props.outputs.date }}
+          ## TWRP v3.7.0_12.1-RMX3491-${{ steps.props.outputs.date }}
           - To be edited.
           - To be edited.
           - To be edited. 
