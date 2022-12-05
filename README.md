@@ -17,10 +17,10 @@ What's working?
 - ADB Sideload
 - Terminal/Console
 - MTP Enable/Disable
+- FastbootD (userspace)
 
 Need more test?
 - Backup/Restore
-- FastbootD (userspace)
 - Flashing a Custom Rom (if exist)
 - Flashing a Stock Rom (if Recovery Rom exist)
 
