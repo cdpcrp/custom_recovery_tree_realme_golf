@@ -31,3 +31,4 @@ Notes:
     - [SHRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/shrp-rmx3491-001)
     - [OFRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/ofrp-rmx3491-001)
  - Flashing instructions are included in the download link. Just carefully read and follow it.
+ - Telegram Community: https://t.me/Realme9i_Official
