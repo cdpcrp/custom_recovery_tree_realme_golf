@@ -25,9 +25,9 @@ Need more test?
 - Flashing a Stock Rom (if Recovery Rom exist)
 
 Notes:
- - Download from here:
-    - [TWRP for RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/twrp-rmx3491-001)
-    - [PBRP for RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/pbrp-rmx3491-001)
-    - [SHRP for RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/shrp-rmx3491-001)
-    - [OFRP for RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/ofrp-rmx3491-001)
+ - Download (fLashable .zip included):
+    - [TWRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/twrp-rmx3491-001)
+    - [PBRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/pbrp-rmx3491-001)
+    - [SHRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/shrp-rmx3491-001)
+    - [OFRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/ofrp-rmx3491-001)
  - Flashing instructions are included in the download link. Just carefully read and follow it.
