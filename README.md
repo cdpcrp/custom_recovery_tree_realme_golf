@@ -20,6 +20,7 @@ What's working?
 
 Need more test?
 - Backup/Restore
+- FastbootD (userspace)
 - Flashing a Custom Rom (if exist)
 - Flashing a Stock Rom (if Recovery Rom exist)
 
