@@ -26,9 +26,9 @@ Need more test?
 
 Notes:
  - Download (fLashable .zip included):
-    - [TWRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/twrp-rmx3491-001)
-    - [PBRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/pbrp-rmx3491-001)
-    - [SHRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/shrp-rmx3491-001)
+    - [TWRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/twrp-rmx3491-002)
+    - [PBRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/pbrp-rmx3491-002)
     - [OFRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/ofrp-rmx3491-002)
+    - [SHRP for Realme 9i - RMX3491](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases/tag/shrp-rmx3491-001) (...I won't build shrp again, for now.)
  - Flashing instructions are included in the download link. Just carefully read and follow it.
  - Telegram Community: https://t.me/Realme9i_Official
