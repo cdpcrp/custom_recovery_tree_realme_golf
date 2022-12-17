@@ -66,7 +66,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ALLOW_DISABLE_NAVBAR=0
 
 	# Device Codename (other variant)
-	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493,ossi,bengal,qti"
+	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493,ossi,bengal,qti,qssi"
         #export OF_TARGET_DEVICES="RMX3491T2,RMX3493,ossi,bengal,qti"
 
 	# Partitions Handling
