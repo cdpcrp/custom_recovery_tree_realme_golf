@@ -29,7 +29,7 @@
 
 # External Partitions
 /external_sd    vfat       /dev/block/mmcblk0p1     /dev/block/mmcblk0      flags=display="Micro SD Card";storage;wipeingui;removable
-/usb_otg        vfat       /dev/block/sdd1          /dev/block/sdd          flags=display="USB Storage";storage;wipeingui;removable
+/usb_otg        vfat       /dev/block/sdg1          /dev/block/sdg          flags=display="USB Storage";storage;wipeingui;removable
 
 # Flashable Partitions
 /boot           emmc     /dev/block/bootdevice/by-name/boot
