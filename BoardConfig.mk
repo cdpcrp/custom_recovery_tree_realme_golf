@@ -1,6 +1,5 @@
 # Copyright (C) 2022 The Android Open Source Project
 # Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
-#
 # SPDX-License-Identifier: Apache-2.0
 
 DEVICE_PATH := device/realme/RMX3491
@@ -24,7 +23,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_NO_BOOTLOADER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX3491,RMX3493,RMX3491T2
+TARGET_OTA_ASSERT_DEVICE := RMX3491,RMX3493,RMX3491T2,ossi,qssi
 
 # File System
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -128,6 +127,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 99.87.36
+PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 # TWRP Configuration
@@ -150,25 +150,11 @@ TW_INCLUDE_FASTBOOTD := true
 TW_USE_FSCRYPT_POLICY := 2
 BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USES_MKE2FS := true
-LC_ALL="C"
 TW_DEVICE_VERSION := Crypton
 
 # Debugging Configs
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# SHRP Configuration
-SHRP_MAINTAINER := Crypton
-SHRP_DEVICE_CODE := RMX3491
-SHRP_PATH := device/realme/RMX3491
-SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A_Only
-SHRP_NOTCH := true
-SHRP_EDL_MODE := 1
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
-SHRP_DARK := true
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_EXPRESS := true
+# Others
+LC_ALL="C"
