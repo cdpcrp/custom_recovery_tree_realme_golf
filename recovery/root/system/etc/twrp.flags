@@ -33,40 +33,22 @@
 
 # Flashable Partitions
 /boot           emmc     /dev/block/bootdevice/by-name/boot
-/recovery       emmc     /dev/block/bootdevice/by-name/recovery
-/persist        ext4     /dev/block/bootdevice/by-name/persist              flags=display=nvram;backup=1
+/recovery       emmc     /dev/block/bootdevice/by-name/recovery             flags=display=recovery;backup=1
+/persist        ext4     /dev/block/bootdevice/by-name/persist              flags=display=persist;backup=1
 
 # Other Partitions
 /metadata	ext4	 /dev/block/by-name/metadata            flags=display=Metadata
 
 # Other OPlus-Related Partitions
-/aboot          emmc    /dev/block/bootdevice/by-name/aboot
-/abootbak       emmc    /dev/block/bootdevice/by-name/abootbak
 /modem          emmc    /dev/block/bootdevice/by-name/modem
-/sbl1           emmc    /dev/block/bootdevice/by-name/sbl1
-/sbl1bak        emmc    /dev/block/bootdevice/by-name/sbl1bak
-/rpm            emmc    /dev/block/bootdevice/by-name/rpm
-/rpmbak         emmc    /dev/block/bootdevice/by-name/rpmbak
 /tz             emmc    /dev/block/bootdevice/by-name/tz
-/tzbak          emmc    /dev/block/bootdevice/by-name/tzbak
-/modemst1       emmc    /dev/block/bootdevice/by-name/modem_st1
-/modemst2       emmc    /dev/block/bootdevice/by-name/modem_st2
 /static_nv_bk   emmc    /dev/block/bootdevice/by-name/oppostanvbk
 /oppodycnvbk    emmc    /dev/block/bootdevice/by-name/oppodycnvbk
-/logo           emmc    /dev/block/bootdevice/by-name/LOGO
-/reserve4       emmc    /dev/block/bootdevice/by-name/reserve4
 /dsp            emmc    /dev/block/bootdevice/by-name/dsp
-/DDR            emmc    /dev/block/bootdevice/by-name/DDR
-/devcfg         emmc    /dev/block/bootdevice/by-name/devcfg
 /mdtp           emmc    /dev/block/bootdevice/by-name/mdtp
-/cmnlib         emmc    /dev/block/bootdevice/by-name/cmnlib
-/cmnlibbak      emmc    /dev/block/bootdevice/by-name/cmnlibbak
-/keymaster      emmc    /dev/block/bootdevice/by-name/keymaster
-/keymasterbak   emmc    /dev/block/bootdevice/by-name/keymasterbak
-/apdp           emmc    /dev/block/bootdevice/by-name/apdp
-/devinfo        emmc    /dev/block/bootdevice/by-name/devinfo
 /opporeserve    ext4    /dev/block/bootdevice/by-name/opporeserve2
 /abl            emmc    /dev/block/bootdevice/by-name/abl
-/ablbak         emmc    /dev/block/bootdevice/by-name/ablbak
 /xbl            emmc    /dev/block/bootdevice/by-name/xbl
-/xblbak         emmc    /dev/block/bootdevice/by-name/xblbak
+/bt_firmware    vfat    /dev/block/bootdevice/by-name/bluetooth
+
+
