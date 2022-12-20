@@ -26,6 +26,6 @@ Need more test?
 
 Notes:
  - Download (fLashable .zip included):
-    - [Custom Recovery for Realme 9i 4G](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases)
+    - [Custom Recovery for Realme 9i 4G](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases) (...always check the build date to know if it is the most recent one.)
  - Flashing instructions are included in the download link. Just carefully read and follow it.
  - Telegram Community: https://t.me/Realme9i_Official
