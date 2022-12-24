@@ -6,25 +6,27 @@
 | CPU                     | Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)  |
 | GPU                     | Adreno 610                                             |
 | Internal                | 64GB 4GB RAM, 128GB 4GB RAM, 128GB 6GB RAM                 |
-| Codename                | RMX3491                                               |
+| Codename                | golf2                                               |
 
-# Custom Recovery Status
-What's working?
-- Touchpanel
-- Decryption
-- Vibration/Haptic 
-- Flashing .img/zip
-- ADB Sideload
-- Terminal/Console
-- MTP Enable/Disable
-- FastbootD (userspace)
+## Notes
+	- You might need to disable first your lockscreen (pin/password/fingerprint) before booting to recovery for decryption to fully work.
+	- Decryption, for some reason, doesn't work in some Generic System Image (GSI).
+	- Backing up is working fine, but Restoring a backup sometimes causes a bootloop. I haven't found workaround for that.
 
-Need more test?
-- Backup/Restore
-- Flashing a Custom Rom (if exist)
-- Flashing a Stock Rom (if Recovery Rom exist)
+## Working Features
+	- Decryption (...read the notes above.)
+	- Vibration/Haptic 
+	- Flashing .img/.zip
+	- ADB Sideload
+	- Terminal/Console
+	- MTP Enable/Disable
+	- FastbootD (userspace/dynamic)
+	- External Storage (Micro SD and USB OTG)
 
-Notes:
+## Bugs
+	- Backup/Restore (...read the notes above.)
+
+## Additional Info
  - Download (fLashable .zip included):
     - [Custom Recovery for Realme 9i 4G](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases) (...always check the build date to know if it is the most recent one.)
  - Flashing instructions are included in the download link. Just carefully read and follow it.
