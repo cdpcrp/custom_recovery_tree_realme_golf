@@ -1,6 +1,6 @@
-# Device Tree for Realme 9i (golf2)
+# Device Tree for Realme 9i 4G (golf2)
 ![Realme 9i](https://github.com/cd-Spidey/Random/blob/main/screenshots/realme_9i.jpg)
-| Device                  | Realme 9i 4G                                             |
+| Device                  | Specifications                                             |
 | ----------------------- | ---------------------------------------------------------|
 | SoC                     | Qualcomm SM6225 Snapdragon 680 4G (6 nm)                      |      
 | CPU                     | Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)  |
