@@ -1,4 +1,4 @@
-FDEVICE="RMX3491"
+FDEVICE="golf2"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -56,7 +56,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_GREEN_LED=0
 
 	# Device Codename (other variant)
-	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493,ossi,bengal,qti,qssi"
+	export TARGET_DEVICE_ALT="RMX3491,RMX3491T2,RMX3493,RED8C1L1,ossi,qssi"
 
 	# Partitions Handling
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"

@@ -1,4 +1,4 @@
-# Device Tree for Realme 9i (RMX3491)
+# Device Tree for Realme 9i (golf2)
 ![Realme 9i](https://github.com/cd-Spidey/Random/blob/main/screenshots/realme_9i.jpg)
 | Device                  | Realme 9i 4G                                             |
 | ----------------------- | ---------------------------------------------------------|

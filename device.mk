@@ -2,7 +2,7 @@
 # Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
 # SPDX-License-Identifier: Apache-2.0
 
-LOCAL_PATH := device/realme/RMX3491
+LOCAL_PATH := device/realme/golf2
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
