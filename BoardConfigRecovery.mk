@@ -45,3 +45,6 @@ TW_DEVICE_VERSION := Crypton
 # Debugging Configs
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# Property Override
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint;ro.build.version.incremental;ro.product.system.device"
