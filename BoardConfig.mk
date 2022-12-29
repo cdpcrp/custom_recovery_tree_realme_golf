@@ -99,6 +99,15 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
+# Crypto
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
+BOARD_USES_QCOM_FBE_DECRYPTION := true
+
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+
 # Qualcomm
 QCOM_BOARD_PLATFORMS := $(PRODUCT_PLATFORM)
 
@@ -110,6 +119,10 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 
 # TWRP Configuration
 include $(DEVICE_PATH)/BoardConfigRecovery.mk
+
+# Debug-tools
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
 # Others
 LC_ALL="C"
