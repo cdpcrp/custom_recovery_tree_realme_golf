@@ -27,6 +27,11 @@
 ## Issues
 - Backup/Restore (...read the notes above.)
 
+## Backup and Restore Workaround
+- When doing backup/restore, only check Data and Boot (other small partitions too), but not System nor any of the Dynamic/Super Partitions.
+- It is also recommended to Format Data using stock recovery.
+- It is also recommended to Reboot to System once after formatting the data, then flash back your custom recovery—then you can now Restore your Backup.
+
 ## Additional Info
 - Download (fLashable .zip included):
   - [Custom Recovery for Realme 9i 4G](https://github.com/cd-Crypton/custom_recovery_tree_realme_RMX3491/releases) (...always check the build date to know if it is the most recent one.)
