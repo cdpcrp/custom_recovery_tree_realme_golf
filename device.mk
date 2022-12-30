@@ -7,16 +7,17 @@ LOCAL_PATH := device/realme/golf2
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+# fastboot
+PRODUCT_PACKAGES := android.hardware.fastboot@1.0-impl-mock
 
-# qcom decryption
+# fastbootd
+PRODUCT_PACKAGES := fastbootd
+
+# QCom Decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
-# Soong namespaces
+# Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

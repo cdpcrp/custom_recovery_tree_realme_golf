@@ -51,6 +51,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x4a90
 TARGET_KERNEL_CONFIG := golf2_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/golf2
 TARGET_KERNEL_CLANG_COMPILE := true
+LC_ALL="C"
 
 # Kernel Prebuilt
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
@@ -98,6 +99,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 
 # Qualcomm
 QCOM_BOARD_PLATFORMS := $(PRODUCT_PLATFORM)
@@ -108,8 +110,16 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 99.87.36
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 
-# TWRP Configuration
-include $(DEVICE_PATH)/BoardConfigRecovery.mk
+# Recovery Modules
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hidl.allocator@1.0 \
+    android.hidl.memory@1.0 \
+    android.hidl.memory.token@1.0 \
+    libdmabufheap \
+    libhidlmemory \
+    libion \
+    libnetutils \
+    libxml2
 
-# Others
-LC_ALL="C"
+# TWRP Configuration
+include $(DEVICE_PATH)/config/TWRPConfig.mk
