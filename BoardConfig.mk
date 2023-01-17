@@ -122,4 +122,4 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libxml2
 
 # TWRP Configuration
-include $(DEVICE_PATH)/config/TWRPConfig.mk
+include $(DEVICE_PATH)/TWRPConfig.mk
