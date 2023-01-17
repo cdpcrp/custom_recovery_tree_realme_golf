@@ -63,11 +63,7 @@
 /keymaster      emmc    /dev/block/bootdevice/by-name/keymaster
 /keystore       emmc    /dev/block/bootdevice/by-name/keystore
 /mdtp           emmc    /dev/block/bootdevice/by-name/mdtp
-/opporeserve1   ext4    /dev/block/bootdevice/by-name/opporeserve1
 /opporeserve2   ext4    /dev/block/bootdevice/by-name/opporeserve2
-/opporeserve3   ext4    /dev/block/bootdevice/by-name/opporeserve3
-/opporeserve4   ext4    /dev/block/bootdevice/by-name/opporeserve4
-/opporeserve5   ext4    /dev/block/bootdevice/by-name/opporeserve5
 /abl            emmc    /dev/block/bootdevice/by-name/abl
 /xbl            emmc    /dev/block/bootdevice/by-name/xbl
 /xbl_config     emmc    /dev/block/bootdevice/by-name/xbl_config
