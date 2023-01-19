@@ -43,14 +43,15 @@
 /vbmeta_system       emmc      /dev/block/bootdevice/by-name/vbmeta_system     flags=display="VBMeta_System";flashimg=1;backup=1
 
 # Other Partitions
-/metadata	ext4        /dev/block/by-name/metadata             flags=display=Metadata
-/cache      ext4        /dev/block/by-name/cache                flags=display=Cache
+/metadata	ext4        /dev/block/by-name/metadata             flags=display="Metadata"
+/cache          ext4        /dev/block/by-name/cache                flags=display="Cache"
 
 # Other OPlus-Related Partitions
-/modem          emmc    /dev/block/bootdevice/by-name/modem             flags=display=Modem;backup=1;flashimg=1
+/splash         emmc    /dev/block/bootdevice/by-name/splash            flags=display="Splash";flashimg=1
+/modem          emmc    /dev/block/bootdevice/by-name/modem             flags=display="Modem";backup=1;flashimg=1
 /modemst1       emmc    /dev/block/bootdevice/by-name/modemst1
 /modemst2       emmc    /dev/block/bootdevice/by-name/modemst2
-/tz             emmc    /dev/block/bootdevice/by-name/tz                flags=display=TZ;backup=1;flashimg=1
+/tz             emmc    /dev/block/bootdevice/by-name/tz                flags=display="TZ";backup=1;flashimg=1
 /static_nv_bk   emmc    /dev/block/bootdevice/by-name/oppostanvbk
 /oppodycnvbk    emmc    /dev/block/bootdevice/by-name/oppodycnvbk
 /cmnlib         emmc    /dev/block/bootdevice/by-name/cmnlib
@@ -63,11 +64,7 @@
 /keymaster      emmc    /dev/block/bootdevice/by-name/keymaster
 /keystore       emmc    /dev/block/bootdevice/by-name/keystore
 /mdtp           emmc    /dev/block/bootdevice/by-name/mdtp
-/opporeserve1   ext4    /dev/block/bootdevice/by-name/opporeserve1
 /opporeserve2   ext4    /dev/block/bootdevice/by-name/opporeserve2
-/opporeserve3   ext4    /dev/block/bootdevice/by-name/opporeserve3
-/opporeserve4   ext4    /dev/block/bootdevice/by-name/opporeserve4
-/opporeserve5   ext4    /dev/block/bootdevice/by-name/opporeserve5
 /abl            emmc    /dev/block/bootdevice/by-name/abl
 /xbl            emmc    /dev/block/bootdevice/by-name/xbl
 /xbl_config     emmc    /dev/block/bootdevice/by-name/xbl_config
