@@ -1,6 +1,6 @@
 # Include in BoardConfig.mk
 TW_THEME := portrait_hdpi
-RECOVERY_SDCARD_ON_DATA := true
+TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
