@@ -103,6 +103,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 
 # Qualcomm
 QCOM_BOARD_PLATFORMS := $(PRODUCT_PLATFORM)
+RECOVERY_SDCARD_ON_DATA := true
 
 # Anti-Roll Back
 PLATFORM_SECURITY_PATCH := 2099-12-31
