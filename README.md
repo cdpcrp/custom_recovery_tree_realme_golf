@@ -1,6 +1,6 @@
 # Custom Recovery Device Tree
 ![Realme 9i](https://github.com/cd-Spidey/Random/blob/main/screenshots/realme_9i.jpg)
-| Device                  | Realme 9i 4G (golf2)                                            |
+| Device                  | Realme 9i 4G (golf)                                            |
 | ----------------------- | ---------------------------------------------------------|
 | SoC                     | Qualcomm SM6225 Snapdragon 680 4G (6 nm)                      |      
 | CPU                     | Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)  |
@@ -12,7 +12,7 @@
 - Decryption now works in Generic System Image (GSI), but not yet tested in all GSI build.
 - Backing up is working fine, but Restoring a backup sometimes causes a bootloop. I haven't found workaround for that.
 - Backup and Restore in GSI aren't tested.
-- Device known codename was RMX3491, but I used golf2 (...see [realme codename](https://gist.github.com/techyminati/61325feaa61526e098a124b89ddb4d15)).
+- Device known codename was RMX3491, but I used golf (...see [realme codename](https://gist.github.com/techyminati/61325feaa61526e098a124b89ddb4d15)).
 
 ## Working Features
 - Decryption (...read the notes above.)

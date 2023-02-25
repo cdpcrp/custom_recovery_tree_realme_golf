@@ -12,14 +12,14 @@ $(call inherit-product-if-exists, vendor/omni/config/common.mk)
 $(call inherit-product-if-exists, vendor/pb/config/common.mk)
 
 # Inherit from Realme 9i 4G Device.
-$(call inherit-product, device/realme/golf2/device_golf2.mk)
+$(call inherit-product, device/realme/golf/golf.mk)
 
-PRODUCT_RELEASE_NAME := golf2
-PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
-PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme 9i 4G
-PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
+# Product Information
+PRODUCT_DEVICE := golf
+PRODUCT_NAME := twrp_$(PRODUCT_DEVICE)
+PRODUCT_BRAND := Realme
+PRODUCT_MODEL := $(PRODUCT_BRAND) 9i 4G
+PRODUCT_MANUFACTURER := realme
 PRODUCT_PLATFORM := bengal
 
-PRODUCT_GMS_CLIENTID_BASE := android-oplus
+PRODUCT_GMS_CLIENTID_BASE := android-$(PRODUCT_MANUFACTURER)
